@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+</head>
+<body>
+    <h2>JavaScript Fundamentals Example</h2>
+    <p id="demo"></p>
+
+    <script>
+        //Variables
+        let userName = "Srijan";
+        let userAge = 22;
+        const phoneNo = 9800000000;
+
+        //Operators
+        let nextYearAge = userAge + 1; //Addition operator
+
+        //Control Statement
+        let greeting;
+        if (userAge < 18){
+            greeting = `Hello ${userName}, you are still a minor.`;
+        }
+        else {
+            greeting = `Hello ${userName}, you are an adult.`;
+        }
+
+        //Control Statement
+        let hobbies = ["Reading", "Gaming", "Singing"];
+        let hobbyList = "The hobbies are: ";
+        for (let i=0; i<hobbies.length; i++){
+            hobbyList += hobbies[i];
+            if (i<hobbies.length - 1){
+                hobbyList += ", ";
+            }
+        }
+
+
+        document.getElementById("demo").innerHTML = `${greeting} <br> Next year, you will be ${nextYearAge} years old. <br> ${hobbyList}.`
+
+    </script>
+</body>
+</html>

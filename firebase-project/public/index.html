@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js"></script>
+    <script src="js/app.js" type="module" defer></script> <!-- Added type="module" -->
+</head>
+<body>
+    <div class="container">
+        <h1>Data Management with Firebase</h1>
+        <form id="userForm">
+            <input type="text" id="userId" placeholder="User ID" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Add/Update User</button>
+        </form>
+        <div id="data-list">
+            <h2>Data Entries</h2>
+            <div id="userList"></div>
+        </div>
+    </div>
+</body>
+</html>

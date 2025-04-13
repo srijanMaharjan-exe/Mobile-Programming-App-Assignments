@@ -1,0 +1,21 @@
+{
+  "name": "firebase-project",
+  "version": "1.0.0",
+  "description": "A simple project to collect data using Firebase and display it with HTML, CSS, and JavaScript.",
+  "main": "public/js/app.js",
+  "scripts": {
+    "start": "firebase serve",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "firebase": "^9.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "firebase",
+    "web",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
